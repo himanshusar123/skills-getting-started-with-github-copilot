@@ -90,12 +90,37 @@ section h3 {
 .participants-list {
   display: grid;
   gap: 6px;
-  padding-left: 20px;
+  padding-left: 0;
+  list-style: none;
   color: #424b63;
 }
 
 .participants-list li {
-  padding-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.delete-participant-button {
+  flex: 0 0 auto;
+  padding: 4px 8px;
+  background-color: transparent;
+  color: #c62828;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.delete-participant-button:hover {
+  background-color: #ffebee;
+}
+
+.delete-participant-button:disabled {
+  cursor: wait;
+  opacity: 0.6;
 }
 
 .participants-empty {
