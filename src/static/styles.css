@@ -163,6 +163,11 @@ button:hover {
   background-color: #3949ab;
 }
 
+button:focus-visible {
+  outline: 3px solid #1a237e;
+  outline-offset: 2px;
+}
+
 .message {
   margin-top: 20px;
   padding: 10px;
